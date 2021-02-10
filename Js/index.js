@@ -21,7 +21,7 @@ TxtType.prototype.tick = function () {
     this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
     var that = this;
-    var delta = 200 - Math.random() * 100;
+    var delta = 100;
 
     if (this.isDeleting) {
         delta /= 2;
@@ -33,7 +33,7 @@ TxtType.prototype.tick = function () {
     } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.loopNum++;
-        delta = 500;
+        delta = 300;
     }
 
     setTimeout(function () {
@@ -56,3 +56,25 @@ window.onload = function () {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+const navbar = document.querySelector('.navbar')
+// const navbarbrand = document.querySelector('.navbar-brand')
+// const navlink = document.querySelector('navbar-nav text-center')
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
+        // navbar.style.height = "64px";
+        // navbar.style.lineHeight = "64px";
+        // navbarbrand.style.color = "black";
+        // navlink.style.color = "black";
+        // navlink.style.opacity = "0.8";
+        navbar.style.backgroundColor = "white";
+        document.getElementById("navbar").className = "navbar navbar-expand-md navbar-light fixed-top";
+    } else if (window.pageYOffset == 0) {
+        // navbar.style.height = "77px";
+        // navbar.style.lineHeight = "77px";
+        navbar.style.backgroundColor = "black";
+        // navbarbrand.style.color = "white";
+        // navlink.style.color = "white";
+        // navlink.style.opacity = "0.8";
+        document.getElementById("navbar").className = "navbar navbar-expand-md navbar-dark fixed-top";
+    }
+});

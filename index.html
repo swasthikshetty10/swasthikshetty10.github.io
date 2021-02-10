@@ -5,7 +5,7 @@
     <!-- CSS only -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
@@ -15,62 +15,87 @@
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
             });
             var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
+                dl = l != "dataLayer" ? "&l=" + l : "";
             j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
             f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-MBWV744');
+        })(window, document, "script", "dataLayer", "GTM-MBWV744");
     </script>
     <!-- End Google Tag Manager -->
     <!-- End Google Tag Manager -->
     <title>Swasthik Shetty | portfolio | Developer | Personal Blog</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="PortFolio, Swasthik Shetty,  Swasthik J Shetty, Swasthik, Epax">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="PortFolio, Swasthik Shetty,  Swasthik J Shetty, Swasthik, Epax" />
     <!-- <link rel="icon" href="img/icon.png"> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBWV744" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+            style="display: none; visibility: hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Nav bar -->
-    <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container-fluid" style="margin-left: 30px;">
-            <a class="navbar-brand" href="#"><b>Swasthik Shetty</b></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav text-center">
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Skills</a>
-                    <a class="nav-link" href="#">Projects</a>
-                    <a class="nav-link" href="#">Contact</a>
+    <section class="navfix">
+        <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid" style="margin-left: 30px">
+                <a class="navbar-brand" href="#"><b>Swasthik Shetty</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-center">
+                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#">Contact</a>
+                    </div>
                 </div>
             </div>
+        </nav>
+
+    </section>
+    <section style="height : 100vh">
+        <!--  -->
+        <div class="bottomAnim">
+            <div class="text-center">
+                <h1 class="typehead">
+                    <b href="" class="typewrite" data-period="2000"
+                        data-type='[ "Hi, Im Swasthik shetty.", "I Love Coding.", "I can build websites.", "I Love to Develop." ]'>
+                        <span class="wrap"></span>
+                    </b>
+                </h1>
+            </div>
+            <div class="container">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div>
         </div>
-    </nav>
-    <div class="bottomAnim"></div>
 
+    </section>
 
-    <div class="text-center">
-        <h1 class="typehead">
-            <b href="" class="typewrite" data-period="2000"
-                data-type='[ "Hi, Im Swasthik shetty.", "I Love Coding.", "I can build WebSites.", "I Love to Develop." ]'>
-                <span class="wrap"></span>
-            </b>
-        </h1>
-    </div>
+    <!-- real body -->
+    <section>
+        <div class="container-fluid" style="page-break-before: always">
+            <div class="about">
+                <h1 class="aboutheading">About Me</h1>
+                <p>
+                    Hi, I am swasthik shetty, I am 1st year CSE student learning and
+                    exploring the world of Computer Science,
+                </p>
+            </div>
+        </div>
+        <!--  -->
+    </section>
 </body>
 <!-- Google Tag Manager (noscript) -->
 <script src="Js/index.js"></script>
