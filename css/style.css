@@ -86,6 +86,7 @@ body{
 
   .aboutheading{
     text-align: center;
+    color: white;
     
   }
   .container {
@@ -185,3 +186,6 @@ body{
     flex: 1 1 auto;
 }
   
+.row .col .card-body {
+  background-color: black;
+}
