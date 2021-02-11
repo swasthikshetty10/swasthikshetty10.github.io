@@ -73,12 +73,17 @@ window.addEventListener('scroll', () => {
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 1000,
     responsive: {
         0: {
             items: 1
         },
         600: {
+            items: 2
+        },
+        800: {
             items: 3
         },
         1000: {
