@@ -57,24 +57,32 @@ window.onload = function () {
     document.body.appendChild(css);
 };
 const navbar = document.querySelector('.navbar')
-// const navbarbrand = document.querySelector('.navbar-brand')
-// const navlink = document.querySelector('navbar-nav text-center')
+
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 100) {
-        // navbar.style.height = "64px";
-        // navbar.style.lineHeight = "64px";
-        // navbarbrand.style.color = "black";
-        // navlink.style.color = "black";
-        // navlink.style.opacity = "0.8";
+    if (window.pageYOffset > 240) {
+
         navbar.style.backgroundColor = "white";
         document.getElementById("navbar").className = "navbar navbar-expand-md navbar-light fixed-top";
-    } else if (window.pageYOffset == 0) {
-        // navbar.style.height = "77px";
-        // navbar.style.lineHeight = "77px";
+    } else if (window.pageYOffset < 230) {
         navbar.style.backgroundColor = "black";
-        // navbarbrand.style.color = "white";
-        // navlink.style.color = "white";
-        // navlink.style.opacity = "0.8";
+
         document.getElementById("navbar").className = "navbar navbar-expand-md navbar-dark fixed-top";
     }
 });
+
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    }
+})
