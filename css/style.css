@@ -208,3 +208,19 @@ body{
   padding: 15px;
   color: aliceblue;
 }
+.jumbotron{
+  height: 370px;
+  width: 600px;
+  padding: 25px;
+  background: #a4d4e0;
+  border-radius: 25px;
+  box-shadow: 0px 2px 35px rgba(185, 201, 250, 0.25);
+}
+
+.jumbotron h1{
+  color:rgb(32, 33, 34);
+}
+
+.align-right{
+  padding-top: 10px;
+}
