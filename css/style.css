@@ -189,3 +189,22 @@ body{
   background-color: black;
 }
 
+.footer{
+  height: 8.5rem;
+  color: white;
+  background-color: rgb(32, 33, 34);
+  margin-bottom: 0px;
+ background-image: url("bg.gif");
+}
+.footercopyright p{
+  bottom: 3px;
+  opacity: 0.5;
+  color: aliceblue;
+ 
+}
+
+.footerlink a{
+  font-size: 1cm;
+  padding: 15px;
+  color: aliceblue;
+}
