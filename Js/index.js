@@ -75,19 +75,27 @@ $('.owl-carousel').owlCarousel({
     margin: 10,
     nav: false,
     autoplay: true,
-    autoplayTimeout: 1000,
+    autoHeight: true,
+    autoWidth: true,
+    responsiveClass: true,
+    autoplayTimeout: 1700,
+    center: true,
+
     responsive: {
         0: {
-            items: 1
+            items: 2
         },
         600: {
             items: 2
         },
         800: {
-            items: 3
+            items: 2
         },
         1000: {
-            items: 5
+            items: 3
+        },
+        1500: {
+            items: 4
         }
     }
 })
