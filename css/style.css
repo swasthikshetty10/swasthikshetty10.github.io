@@ -86,7 +86,7 @@ body{
   .aboutheading{
     text-align: center;
     color: white;
-    
+    text-decoration: underline rgb(0, 183, 255);
   }
   .container {
     display: flex;
