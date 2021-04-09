@@ -77,19 +77,18 @@
             <div class="text-center">
                 <h1 class="typehead">
                     <b href="" class="typewrite" data-period="2000"
-                        data-type='[ "Hi, Im Swasthik shetty.", "I Love Coding.", "I can build websites.", "I Love to Develop." ]'>
+                        data-type='[ "Hi, I am Swasthik shetty.", "I am Full Stack Developer","I Love Coding", "Good to See You :)" ]'>
                         <span class="wrap"></span>
                     </b>
                 </h1>
             </div>
             <div class="container">
-                <div class="chevron"></div>
-                <div class="chevron"></div>
-                <div class="chevron"></div>
+                <div onclick="scrollTOabout()" class="chevron"></div>
+                <div onclick="scrollTOabout()" class="chevron"></div>
+
             </div>
         </div>
     </section>
-
     <!-- real body -->
     <!-- about -->
     <section id="about">
@@ -119,59 +118,40 @@
     </section>
     <section>
         <div class="container-fluid skills" id="skills">
-            <div class="text-center">
-                <div>
-                    <h1 class="aboutheading">Technical Skills</h1>
+            <div class="row">
+                <div class="col-12">
+                    <h2>Skills</h2>
                 </div>
-                <hr />
-                <div class="owl-carousel owl-theme owl-responsive">
-                    <div class="item">
-                        <div class="card border-2" style="width: 18rem">
-                            <img class="card-img-top" src="img/skills/python.png" alt="Card image cap" />
-                            <div class="card-title">
-                                <h1>Python</h1>
-                            </div>
+                <div class="col-12">
+
+                    <div class="skill owl-carousel">
+
+                        <div>
+                            <img alt="React JS" src="img/skills/react-js.svg">
+                            <p>React JS</p>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="card border-2" style="width: 18rem">
-                            <img class="card-img-top" src="img/skills/django.png" alt="Card image cap" />
-                            <div class="card-title">
-                                <h1>Django</h1>
-                            </div>
+                        <div>
+                            <img alt="Django" class="Django" src="img/skills/django.svg">
+                            <p>Django</p>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="card border-2" style="width: 18rem">
-                            <img class="card-img-top" src="img/skills/javascript.png" alt="Card image cap" />
-                            <div class="card-title">
-                                <h1>Javascript</h1>
-                            </div>
+                        <div>
+                            <img alt="CSS3" src="img/skills/css3.svg">
+                            <p>CSS3</p>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="card border-2" style="width: 18rem">
-                            <img class="card-img-top" src="img/skills/bootstrap.png" alt="Card image cap" />
-                            <div class="card-title">
-                                <h1>Bootstrap</h1>
-                            </div>
+                        <div>
+                            <img alt="HTML5" src="img/skills/html-5.svg">
+                            <p>HTML5</p>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="card border-2" style="width: 18rem">
-                            <img class="card-img-top" src="img/skills/html.png" alt="Card image cap" />
-                            <div class="card-title">
-                                <h1>HTML</h1>
-                            </div>
+                        <div>
+                            <img alt="BootStrap" src="img/skills/bootstrap.svg">
+                            <p>BootStrap</p>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="card border-2" style="width: 18rem">
-                            <img class="card-img-top" src="img/skills/css.png" alt="Card image cap" />
-                            <div class="card-title">
-                                <h1>CSS</h1>
-                            </div>
+                        <div>
+                            <img alt="JavaScript" src="img/skills/js.svg">
+                            <p>JavaScript</p>
                         </div>
+
+
                     </div>
                 </div>
             </div>
@@ -181,49 +161,42 @@
     <br />
     <br />
     <section id="projects">
-        <div class="container-fluid project" id="skills">
-            <div class="text-center">
-                <div>
-                    <h1 class="aboutheading">Projects</h1>
+        <div class="container work" style = "display : none;"id="work">
+            <div class="row">
+                <div class="col-12">
+                    <h2>My Projects</h2>
                 </div>
-                <hr />
-                <div class="owl-carousel owl-theme owl-responsive">
-                    <div class="item">
-                        <div class="card border-2" style="width: 18rem">
-                            <img class="card-img-top" src="img/project/epaxai.png" alt="Card image cap" />
-                            <div class="card-title">
-                                <h1>EPAX AI</h1>
-                                <p>ML based virtual assistant</p>
-                            </div>
+                <div class="col-12 col-lg-4">
+                    <div class="project wow fadeInUp">
+                        <img src="img/project/epaxai.png" alt="">
+                        <div class="overlay">
+                            <a href="https://proomedia.herokuapp.com" target="blank" class="text">Visit</a>
                         </div>
                     </div>
-
-                    <div class="item">
-                        <div class="card border-2" style="width: 18rem">
-                            <img class="card-img-top" src="img/project/bclnews.png" alt="Card image cap" />
-                            <div class="card-title">
-                                <h1>BCL NEWS</h1>
-                                <p>Indian News website (webscraping)</p>
-                            </div>
+                    <div class="title">
+                        AI virtual Asssitant
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="project wow fadeInUp" data-wow-delay="0.1s">
+                        <img src="img/project/chintubot.png" alt="">
+                        <div class="overlay">
+                            <a href="" target="blank" class="text">Visit</a>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="card border-2" style="width: 18rem">
-                            <img class="card-img-top" src="img/project/kuchbb.png" alt="Card image cap" />
-                            <div class="card-title">
-                                <h1>KUCHH B</h1>
-                                <p>Image search website</p>
-                            </div>
+                    <div class="title">
+                        Discord Bot
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="project wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="img/project/bclnews.png" alt="">
+                        <div class="overlay">
+                            <a href="" target="blank" class="text">Visit</a>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="card border-2" style="width: 18rem">
-                            <img class="card-img-top" src="img/project/chintubot.png" alt="Card image cap" />
-                            <div class="card-title">
-                                <h1>ChintuBot</h1>
-                                <p>A Discord bot</p>
-                            </div>
-                        </div>
+                    <div class="title">
+                        News Website
                     </div>
                 </div>
             </div>

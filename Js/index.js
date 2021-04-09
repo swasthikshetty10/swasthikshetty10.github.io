@@ -99,3 +99,9 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+function scrollTOabout() {
+    document.getElementById('about').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
