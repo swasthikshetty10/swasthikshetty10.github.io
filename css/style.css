@@ -253,13 +253,22 @@ body {
   margin-top: 100px;
   text-align: center;
 }
-
-.skills h2 {
-  padding: 10px;
-  border-bottom: 5px solid #7C00C9;
-  display: inline-block;
+.gitstatus {
+  text-align: center;
 }
 
+.gitstatus h2 {
+  padding: 10px;
+  color: white;
+  border-bottom: 5px solid #006fc9;
+  display: inline-block;
+}
+.skills h2 {
+  padding: 10px;
+  color: white;
+  border-bottom: 5px solid #006fc9;
+  display: inline-block;
+}
 .skills .skill img {
   height: 100px;
   padding-right: 20px;
@@ -290,7 +299,8 @@ body {
 
 .work h2 {
   padding: 10px;
-  border-bottom: 5px solid #7C00C9;
+  color: white;
+  border-bottom: 5px solid #006fc9;
   display: inline-block;
 }
 
