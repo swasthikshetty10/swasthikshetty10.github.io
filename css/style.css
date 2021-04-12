@@ -325,7 +325,8 @@ body {
   background-color: transparent;
 }
 .work .project .links{
-
+  background-color: #000000;
+  opacity: 0.9;
   color: white;
   display: flex;
   text-align: center;
@@ -342,6 +343,7 @@ body {
 .work .project .links a{
   color: aliceblue;
   padding: 10px;
+  
   
 }
 
