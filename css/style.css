@@ -374,3 +374,7 @@ body {
   -webkit-filter: grayscale(80%)  blur(1px); 
   filter: grayscale(80%) blur(1px);
 }
+
+.gitstatus :hover{
+  cursor: pointer;
+}
