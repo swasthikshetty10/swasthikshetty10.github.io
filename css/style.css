@@ -378,3 +378,6 @@ body {
 .gitstatus :hover{
   cursor: pointer;
 }
+.Django {
+  max-width: 500px;
+}
