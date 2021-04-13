@@ -253,11 +253,11 @@ body {
   margin-top: 100px;
   text-align: center;
 }
-.gitstatus {
+.gitstats {
   text-align: center;
 }
 
-.gitstatus h2 {
+.gitstats h2 {
   padding: 10px;
   color: white;
   border-bottom: 5px solid #006fc9;
@@ -375,7 +375,7 @@ body {
   filter: grayscale(80%) blur(1px);
 }
 
-.gitstatus :hover{
+.gitstats :hover{
   cursor: pointer;
 }
 .Django {
