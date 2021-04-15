@@ -210,8 +210,11 @@ body {
 
 .footercopyright p {
   bottom: 3px;
-  opacity: 0.5;
-  color: aliceblue;
+  opacity: 1;
+  font-weight: bold;
+  font-family: 'Courier New';
+  color: rgb(255, 245, 245);
+  font-size:larger;
 
 }
 
