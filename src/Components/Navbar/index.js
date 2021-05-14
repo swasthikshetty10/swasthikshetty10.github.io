@@ -8,7 +8,7 @@ const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'About', href: '#', current: false },
   { name: 'Projects', href: '#', current: false },
-  { name: 'Portfolio', href: '#', current: false },
+  { name: 'Project Request', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
 ]
 
@@ -18,7 +18,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="mw-full bg-gray-800">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
