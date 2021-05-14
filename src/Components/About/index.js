@@ -1,12 +1,14 @@
-import { Slide } from '@material-ui/core';
+
 import React from 'react'
+import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
 import Dev from "../../Images/Background/Developer.svg"
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import Flip from 'react-reveal/Flip';
 function index() {
 
     return (
-        <section id = "about" className = "">
+        <section id = "about" className = "bg-gray-900 lg:h-screen">
         
         <div className="  text-indigo-200 body-font p-5 bg-gray-900">
             <div id= "about" className = "mt-10 text-center">
@@ -19,26 +21,30 @@ function index() {
             </div>
             
             <div className = "flex">
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 sm:block hidden">
+               <Slide left> 
+                   <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 sm:block hidden">
                     
                         <img className="object-cover object-center rounded" alt="hero" src={Dev} />
-                    
-                </div>
+                
+                    </div>
+                </Slide>
                 <div >
                 <div>
                     <div className="mx-auto flex px-5  sm:flex-row flex-col items-center ">
-                        <div className="flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center">
-                            
-                                <div >          
-                                    <div className="pt-10 px-2 sm:px-6">                
+                        <div className="flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center">          
+                                <div className="pt-10 px-2 sm:px-6">      
+
+                                    <Slide right> 
                                         <p className="text-indigo-200 text-base pb-6">
                                             Hi I am Swasthik Shetty, self taught programmer learning and exploring new technologies, I love to contribute to open-source projects and community , I enjoy being challenged and engaging with projects that enables me to learn new skills; 
                                             </p>
+                                    </Slide>
+                                    <Slide right> 
                                         <p className="text-indigo-200 text-base pb-8">
                                         I am First-yest student pursuing bachelors of degree in Computer Science and Engineering at NMAM Institute of Technology 
                                             </p>
-
-                                        <div className = "flex-column italic">
+                                    </Slide>
+                                    <Slide bottom className = "flex-column italic">
                                         <div className="flex-column lg:flex items-center justify-right  text-white">
                                             <div  className = "pr-10 lg:pr-20">
                                                 <span className = "text-pink-600"><ArrowRightIcon/> </span> Birthday : <span>10 sept 2002 ; </span>
@@ -55,9 +61,9 @@ function index() {
                                             <span className = "text-pink-600 "><ArrowRightIcon/> </span>Email : <span>swasthikshetty10902@gmail.com ; </span>
                                             </div>
                                         </div>
-                                        </div>
-                                        </div>
+                                    </Slide>
                                 </div>
+                                
                            
                         </div>
                     </div>

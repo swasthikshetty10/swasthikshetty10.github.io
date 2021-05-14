@@ -5,3 +5,31 @@
 body {
     background-color: #F3F4F6;
 }
+.skillscroll {
+    scrollbar-width: thin;
+  scrollbar-color:  #4f46e5 #f3f4f6;
+}
+body::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(79,70,229);
+    outline: 1px solid rgb(79,70,229);
+  }
+  .skillscroll::-webkit-scrollbar {
+    width: 0.15rem;
+  }
+   
+  .skillscroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  .skillscroll::-webkit-scrollbar-thumb {
+    background-color: rgb(79,70,229);
+    outline: 1px solid rgb(79,70,229);
+  }
