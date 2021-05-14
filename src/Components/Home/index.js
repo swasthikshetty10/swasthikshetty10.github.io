@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Slide from 'react-reveal/Slide';
 import swasthik from "../../Images/Pages/swasthik.jpg"
 import Fade from 'react-reveal/Fade';
-export default function Example() {
+export default function Home() {
   return (
     <section className = "lg:h-screen">
     <div className="relative bg-white overflow-hidden">

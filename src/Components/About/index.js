@@ -5,7 +5,7 @@ import Bounce from 'react-reveal/Bounce';
 import Dev from "../../Images/Background/Developer.svg"
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import Flip from 'react-reveal/Flip';
-function index() {
+function About() {
 
     return (
         <section id = "about" className = "bg-gray-900 lg:h-screen">
@@ -75,4 +75,4 @@ function index() {
     )
 }
 
-export default index
+export default About

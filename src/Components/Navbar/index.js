@@ -7,9 +7,9 @@ import ChatIcon from '@material-ui/icons/Chat'
 const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'About', href: '#about', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Project Request', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
+  { name: 'Projects', href: '#projects', current: false },
+  { name: 'Project Request', href: '/projectrequest', current: false },
+  { name: 'Contact', href: '#contact', current: false },
 ]
 
 function classNames(...classes) {
