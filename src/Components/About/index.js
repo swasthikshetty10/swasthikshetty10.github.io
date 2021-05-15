@@ -4,7 +4,6 @@ import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
 import Dev from "../../Images/Background/Developer.svg"
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-import Flip from 'react-reveal/Flip';
 function About() {
 
     return (
