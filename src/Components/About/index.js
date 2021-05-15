@@ -34,17 +34,17 @@ function About() {
                                 <div className="pt-10 px-2 sm:px-6">      
 
                                     <Slide right> 
-                                        <p className="text-indigo-200 text-base pb-6">
+                                        <p className="lg:mt-10 text-indigo-200 text-base pb-6">
                                             Hi I am Swasthik Shetty, self taught programmer learning and exploring new technologies, I love to contribute to open-source projects and community , I enjoy being challenged and engaging with projects that enables me to learn new skills; 
                                             </p>
                                     </Slide>
                                     <Slide right> 
-                                        <p className="text-indigo-200 text-base pb-8">
+                                        <p className="lg:mt-5 text-indigo-200 text-base pb-8">
                                         I am First-yest student pursuing bachelors of degree in Computer Science and Engineering at NMAM Institute of Technology 
                                             </p>
                                     </Slide>
                                     <Slide bottom className = "flex-column italic">
-                                        <div className="flex-column lg:flex items-center justify-right  text-white">
+                                        <div className="lg:mt-10 flex-column lg:flex items-center justify-right  text-white">
                                             <div  className = "pr-10 lg:pr-20">
                                                 <span className = "text-pink-600"><ArrowRightIcon/> </span> Birthday : <span>10 sept 2002 ; </span>
                                             </div>
