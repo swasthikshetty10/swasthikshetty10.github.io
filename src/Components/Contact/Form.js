@@ -5,8 +5,8 @@ function Form() {
         
        
           
-        <div className = "font-sans flex-grow  m-5 p-10  border-2  border-blue-700   lg:pb-20 lg:pt-10 lg:pl-10 lg:pr-10  bg-gray-100 rounded-xl " style = {{ maxWidth : "600px"}}>
-            <div className = "flex justify-center"><h2 className = " text-2xl pb-10 pt-5"> Send me a  message 🙂</h2></div>
+        <div className = "font-sans flex-grow  m-5 p-5 md:p-10 lg:p-10  border-2  border-blue-700   lg:pb-20 lg:pt-10 lg:pl-10 lg:pr-10  bg-gray-100 rounded-xl " style = {{ maxWidth : "600px"}}>
+            <div className = "flex justify-center"><h2 className = " text-2xl pb-5 md:pb-10 lg:pb-10 pt-5"> Send me a  message 🙂</h2></div>
             
         <form onSubmit = {(e) => { console.log(e.target.value)}}>
             <div className = "name flex flex-col md:flex lg:flex  ">

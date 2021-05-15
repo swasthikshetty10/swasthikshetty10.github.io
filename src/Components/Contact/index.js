@@ -2,6 +2,7 @@ import React from 'react'
 import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
 import Form from "./Form"
+import ContactCard from "./ContactCard"
 import Chat from "../../Images/Background/contact.svg"
 
 function Index() {
@@ -16,15 +17,20 @@ function Index() {
             </Bounce>
             </div>
 
-            <div className = "flex justify-evenly">
+            <div className = "flex sm:flex-row flex-col justify-evenly">
 
-            <Slide left> 
+            
+            <div className = "flex flex-col justify-evenly">
+                <ContactCard/>
+                    <Slide left> 
                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 sm:block hidden">
                     
                         <img className="object-cover object-center rounded" alt="hero" src={Chat} />
                 
                     </div>
-            </Slide>
+                    </Slide>
+                </div>
+         
             
           
             <Form />

@@ -68,7 +68,7 @@ export default function Example() {
               <div className="cursor-pointer absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <a className= "text-sm font-medium hidden lg:block  p-2  text-gray-300 hover:text-white focus:outline-none">                  
                   <span className="sr-only">Chat with me</span>
-                 LetsTalk <ChatIcon/>
+                 <ChatIcon/>
             
                 </a> 
                 <a className="block lg:hidden bg-gray-800  p-1 rounded-full text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
