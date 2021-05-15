@@ -20,10 +20,10 @@ function Index() {
             <div className = "flex sm:flex-row flex-col justify-evenly">
 
             
-            <div className = "flex flex-col justify-evenly">
+            <div className = "flex-shrink flex flex-col justify-evenly">
                 <ContactCard/>
                     <Slide left> 
-                   <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 sm:block hidden">
+                   <div className="lg:max-w-lg lg:w-full sm:w-32  sm:block hidden">
                     
                         <img className="object-cover object-center rounded" alt="hero" src={Chat} />
                 
