@@ -46,7 +46,7 @@ function Index() {
     }
     const [toFilter , setFilter] = useState(Skills.all)
     return (
-        <section id = "about" className = "text-gray-900  lg:h-screen">
+        <section id = "skills" className = "text-gray-900  lg:h-screen">
         
         <div className="  body-font p-5 ">
             <div id= "about" className = "mt-10 text-center">

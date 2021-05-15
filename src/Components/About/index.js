@@ -10,7 +10,7 @@ function About() {
     return (
         <section id = "about" className = "bg-gray-900 lg:h-screen">
         
-        <div className="  text-indigo-200 body-font p-5 bg-gray-900">
+        <div className=" text-indigo-200 body-font p-5">
             <div id= "about" className = "mt-10 text-center">
             <Bounce top>
                 <h1 className="center text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
@@ -55,7 +55,7 @@ function About() {
                                         </div>
                                         <div className="lg:flex items-center justify-right  text-white">
                                             <div  className = "pr-10 lg:pr-20">
-                                                <span className = "text-pink-600"><ArrowRightIcon/> </span> City : <span>Udupi, Karnataka; </span>
+                                                <span className = "text-pink-600"><ArrowRightIcon/> </span> City : <span>Udupi, Karnataka ; </span>
                                             </div>
                                             <div>
                                             <span className = "text-pink-600 "><ArrowRightIcon/> </span>Email : <span>swasthikshetty10902@gmail.com ; </span>
