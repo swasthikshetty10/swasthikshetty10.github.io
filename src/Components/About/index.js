@@ -12,10 +12,10 @@ function About() {
         <div className=" text-indigo-200 body-font p-5">
             <div id= "about" className = "mt-10 text-center">
             <Bounce top>
-                <h1 className="center text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
-                    <span className="block xl:inline">About Me</span>
+                <div className="center text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+                    <h1 className="block xl:inline">About Me</h1>
                 
-                </h1>
+                </div>
             </Bounce>
             </div>
             
