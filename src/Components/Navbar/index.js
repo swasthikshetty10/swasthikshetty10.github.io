@@ -68,7 +68,7 @@ export default function Example() {
                 </div>
               </div>
               <div className="cursor-pointer absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <a href = "https://wa.link/xcfy4e" className= "text-sm font-medium hidden lg:block  p-2  text-gray-300 hover:text-white focus:outline-none">                  
+                <a href = "https://wa.link/xcfy4e" className= "text-sm font-medium block lg:block  p-2  text-gray-300 hover:text-white focus:outline-none">                  
                   <span className="sr-only">Chat with me</span>
                   <ChatIcon/>
             

@@ -2,15 +2,15 @@
 import styled from 'styled-components'
 import Slide from 'react-reveal/Slide';
 import swasthik from "../../Images/Pages/swasthik.jpg"
-import Fade from 'react-reveal/Fade';
+
 export default function Home() {
   return (
     <section className = "lg:h-screen">
     <div className="relative bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
-      
+      <Slide left>
         <div className="lg:h-screen relative z-10 pb-8 pt-1 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-            
+       
           <svg
             className="hidden lg:block absolute mr-0 right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
             fill="currentColor"
@@ -24,19 +24,19 @@ export default function Home() {
           </svg>
           
 
-          <Slide left>
+      
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">Hello, I am Swasthik </span>
+              <div className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                <h1 className="block xl:inline">Hello, I am Swasthik </h1>
                
-                <span className="block text-indigo-600 xl:inline">Full Stack Developer</span>
+                <h1 className="block text-indigo-600 xl:inline">Full Stack Developer</h1>
               
-              </h1>
-              <Fade top>
+              </div>
+            
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                Freelancer and CSE student learning and exploring the world of Computer Science
-              </p>        </Fade>
+              </p>       
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
@@ -57,8 +57,9 @@ export default function Home() {
               </div>
             </div>
           </main>
-          </Slide>
+     
         </div>
+        </Slide>
      
         
       </div>

@@ -27,33 +27,20 @@ function Index() {
     return (
         <section id= "projects" className = " h-full text-gray-900">
             <div>
-            
             <div  className = "p-10 lg:pb-10  text-center">
             <Bounce top>
-                <h1 className=" center text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
-                    <span className="block xl:inline">Projects</span>
+                <div className=" center text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
+                    <h1 className="block xl:inline">Projects</h1>
                 
-                </h1>
+                </div>
             </Bounce>
             </div>
-
-            {/* <div  className = "container mx-auto  grid grid-cols-1  md:grid-cols-3 lg:grid-cols-3  gap-10 items-center">
-            {Projects.all.map( (ele) => {
-                return <div class = "dummyProject" ></div>
-            })}
-            </div> */}
             <div  className = "container mx-auto  grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3  gap-10 items-center">
             {Projects.all.map( (ele) => {
                 return <Card name = {ele.name} image = {ele.image} github = {ele.github} link = {ele.link}   />
             })}
-                   
-               
-          
             </div>
-            
             </div>
-
-               
         </section>
     )
 }

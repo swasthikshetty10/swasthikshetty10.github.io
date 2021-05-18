@@ -51,10 +51,10 @@ function Index() {
         <div className="  body-font p-5 ">
             <div id= "about" className = "mt-10 text-center">
             <Bounce top>
-                <h1 className="center text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                    <span className="block xl:inline">Skills</span>
+                <div className="center text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                    <h1 className="block xl:inline">Skills</h1>
                     
-                </h1>
+                </div>
             </Bounce>
             </div>
             

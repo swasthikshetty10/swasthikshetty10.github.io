@@ -10,10 +10,10 @@ function Index() {
         <section  id = "contact" className = "lg:mt-10 bg-gray-900 pb-10" >
             <div id= "about" className = "mt-20 text-center">
             <Bounce top>
-                <h1 className="center text-4xl tracking-tight font-extrabold p-10 text-white sm:text-5xl md:text-6xl">
-                    <span className="block xl:inline">Contact</span>
+                <div className="center text-4xl tracking-tight font-extrabold p-10 text-white sm:text-5xl md:text-6xl">
+                    <h1 className="block xl:inline">Contact</h1>
                 
-                </h1>
+                </div>
             </Bounce>
             </div>
 
