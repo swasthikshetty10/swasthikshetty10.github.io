@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.bcbd9164.chunk.css",
-    "main.js": "/static/js/main.d1c07bcc.chunk.js",
-    "main.js.map": "/static/js/main.d1c07bcc.chunk.js.map",
+    "main.css": "/static/css/main.fbfa6327.chunk.css",
+    "main.js": "/static/js/main.ef699614.chunk.js",
+    "main.js.map": "/static/js/main.ef699614.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a45f13ea.js",
     "runtime-main.js.map": "/static/js/runtime-main.a45f13ea.js.map",
     "static/js/2.8d7a6cb8.chunk.js": "/static/js/2.8d7a6cb8.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.96143d0d.chunk.js": "/static/js/3.96143d0d.chunk.js",
     "static/js/3.96143d0d.chunk.js.map": "/static/js/3.96143d0d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.bcbd9164.chunk.css.map": "/static/css/main.bcbd9164.chunk.css.map",
+    "static/css/main.fbfa6327.chunk.css.map": "/static/css/main.fbfa6327.chunk.css.map",
     "static/js/2.8d7a6cb8.chunk.js.LICENSE.txt": "/static/js/2.8d7a6cb8.chunk.js.LICENSE.txt",
     "static/media/Chatbot.1c33c056.jpg": "/static/media/Chatbot.1c33c056.jpg",
     "static/media/Dev3.93881364.svg": "/static/media/Dev3.93881364.svg",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.a45f13ea.js",
     "static/js/2.8d7a6cb8.chunk.js",
-    "static/css/main.bcbd9164.chunk.css",
-    "static/js/main.d1c07bcc.chunk.js"
+    "static/css/main.fbfa6327.chunk.css",
+    "static/js/main.ef699614.chunk.js"
   ]
 }
