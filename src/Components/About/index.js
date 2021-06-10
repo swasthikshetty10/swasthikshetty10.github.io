@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
@@ -22,9 +21,7 @@ function About() {
                 <div className="flex justify-center ">
                     <Slide left>
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 sm:block hidden md:ml-20">
-
                             <img className="object-cover object-center rounded" alt="hero" src={Dev} />
-
                         </div>
                     </Slide>
                     <div >
@@ -40,7 +37,7 @@ function About() {
                                         </Slide>
                                         <Slide right>
                                             <p className="lg:mt-5 text-indigo-200 text-base pb-8">
-                                                I am First-yest student pursuing bachelors of degree in Computer Science and Engineering at NMAM Institute of Technology
+                                                I am First-year student pursuing bachelors of Engineering in Computer Science at NMAM Institute of Technology
                                             </p>
                                         </Slide>
                                         <Slide bottom className="flex-column italic">
