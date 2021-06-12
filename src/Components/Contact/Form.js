@@ -24,7 +24,7 @@ function Form() {
                 console.log(res);
                 console.log(res.data);
                 setLoading(false)
-                SuccessDiv.current.innerHTML = `<p class="font-semibold text-green-600">Thankyou your message was sent ✔️ </p>`
+                SuccessDiv.current.innerHTML = `<p class="font-semibold text-green-600">Thankyou your message has been sent ✔️ </p>`
                 e.target[0].value = ""
                 e.target[1].value = ""
                 e.target[2].value = ""
