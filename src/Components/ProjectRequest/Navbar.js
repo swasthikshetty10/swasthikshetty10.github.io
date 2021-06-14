@@ -74,7 +74,7 @@ export default function Navbar() {
 
 
                             </div>
-                            <DropDown />
+                            {isLoggedIn ? <DropDown /> : <button className="font-semibold text-white rounded-md hover:bg-indigo-500 bg-blue-700 px-4 py-2 " onClick={() => { setLoggedIn(true) }}>Login</button>}
 
                         </div>
                     </div>
