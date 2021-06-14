@@ -24,8 +24,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        {/* <Route path="/project" component={ProjectRequest} />
-        <Route path="/hireme" component={ProjectRequest} /> */}
+        <Route path="/project" component={ProjectRequest} />
+        <Route path="/hireme" component={ProjectRequest} />
         <Route path="/" component={HomePage} />
       </Switch>
     </Router>

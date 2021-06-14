@@ -6,6 +6,7 @@ function Index() {
     return (
         <>
             <Navbar />
+            <OrderForm />
         </>
     )
 }
