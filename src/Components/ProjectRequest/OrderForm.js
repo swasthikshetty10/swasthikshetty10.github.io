@@ -9,8 +9,8 @@ import FolderOutlinedIcon from '@material-ui/icons/FolderOutlined';
 function OrderForm() {
 
     return (
-        <div className="flex  justify-center ">
-            <form className="flex gap-10 flex-col font-medium p-5 md:p-10 rounded-lg shadow-xl bg-white">
+        <div className="flex z-10  justify-center ">
+            <form className="flex gap-7 flex-col font-medium p-5 md:p-10 rounded-lg shadow-xl bg-white">
                 <div className="form-control flex flex-col " >
                     <label className="text-xl py-2 ">Choose a name for your project</label>
                     <input name="project_name" placeholder="e.g. Build me cool website " className="p-3 focus:border-green-700  focus:outline-none md:px-5 border border-indigo-500" type="text" required></input>
@@ -22,9 +22,9 @@ function OrderForm() {
                 </div>
                 <div className="form-control flex flex-col" >
                     <label className="text-xl py-2">Project budget</label>
-                    <div className="flex w-40 focus:border-green-700  focus:outline-none md:p-2 border border-indigo-500">
+                    <div className="flex w-40 p-2 focus:border-green-700  focus:outline-none md:p-2 border border-indigo-500">
                         <div class=" border  border-indigo-500">
-                            <select name="currency_type ">
+                            <select name="currency_type " className="focus:outline-none focus:border-green-700">
                                 <option value="inr">₹</option>
                                 <option value="usd">$</option>
                             </select>
@@ -36,7 +36,7 @@ function OrderForm() {
                 <div className="form-control flex flex-col" >
                     <label className="text-xl ">Final date</label>
                     <p className="text-md font-normal py-1">Pick a date on or before your project must be completed</p>
-                    <input name="date" min={date()} type="date" className="w-48 focus:border-green-700  focus:outline-none md:p-2 border border-indigo-500"></input>
+                    <input name="date" min={date()} type="date" className="p-2 w-48 focus:border-green-700  focus:outline-none md:p-2 border border-indigo-500"></input>
                 </div>
                 <div className="form-controlflex flex-row gap-5" >
                     <div className="w-full">
@@ -44,9 +44,9 @@ function OrderForm() {
                             <div className="absolute">
                                 <div className="flex flex-row gap-5 justify-evenly  p-3 items-center">
                                     <FolderOutlinedIcon style={{ fontSize: "5rem", opacity: "60%", color: "gray" }} />
-                                    <span className="block text-base font-normal opacity-50 md:block">Drag & drop any images or documents that might be helpful in explaining
+                                    <span className="hidden text-base font-normal opacity-50 md:block">Drag & drop any images or documents that might be helpful in explaining
                                         your brief here (Max file size: 25 MB)</span>
-                                    <span className="hidden text-base font-normal opacity-50 md:hidden">Choose any file that might be helpful(Max file size: 25 MB)</span>
+                                    <span className="block text-base font-normal opacity-50 md:hidden">Choose any file that might be helpful(Max file size: 25 MB)</span>
                                 </div>
                             </div> <input name="reference_files" type="file" className="h-full w-full opacity-0" name="" />
                         </div>
