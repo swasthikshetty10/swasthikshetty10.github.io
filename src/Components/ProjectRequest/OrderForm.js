@@ -7,34 +7,41 @@ import DescriptionIcon from '@material-ui/icons/Description';
 function OrderForm() {
 
     const [datafiles, setDatafiles] = useState([]);
+    const [uploadFiles, setUploadFiles] = useState([])
     const FormSubmitHandler = function (event) {
         event.preventDefault();
         console.log(
             event.target[0].value,
             event.target[1].value,
             event.target[2].value,
-            event.target[3].value,
-            event.target[4].value)
+            event.target[3].value)
+        console.log(uploadFiles)
+
     }
     const FileOnChange = function (e) {
         let files = e.target.files;
-        console.log(files);
-        setDatafiles([...datafiles, files])
         let reader = new FileReader;
+        var file2upload = null
         reader.readAsDataURL(files[0]);
         reader.onload = (e) => {
-            console.log(e.target)
-
+            file2upload = e.target.result
+            setUploadFiles([...uploadFiles, e.target.result])
         }
-
+        setDatafiles([...datafiles, files])
     }
     function RemoveFile(file) {
-        var array = [...datafiles]
-        var index = array.indexOf(file); // Let's say it's Bob.
+        var data_files = [...datafiles]
+        var upload_Files = [...uploadFiles]
 
+        // setDatafiles(data_files.filter((item) => {
+        //     return item != file
+        // }))
+        var index = data_files.indexOf(file); // Let's say it's Bob.
         if (index !== -1) {
-            array.splice(index, 1);
-            setDatafiles(array);
+            data_files.splice(index, 1);
+            setDatafiles(data_files);
+            upload_Files.splice(index, 1);
+            setUploadFiles(upload_Files);
         }
     }
 
@@ -80,7 +87,7 @@ function OrderForm() {
                 <div className="form-control flex flex-col" >
                     <label className="text-xl ">Final date</label>
                     <p className="text-md font-normal py-1">Pick a date on or before your project must be completed</p>
-                    <input name="date" min={date()} type="date" className="p-2 w-48 focus:border-green-700  focus:outline-none md:p-2 border border-indigo-500"></input>
+                    <input name="date" min={date()} type="date" className="p-2 w-48 focus:border-green-700  focus:outline-none md:p-2 border border-indigo-500" required ></input>
                 </div>
                 <div className="form-controlflex flex-row gap-5" >
                     <div className="w-full">
