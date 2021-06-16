@@ -6,7 +6,7 @@ function Index() {
     return (
         <>
             <Navbar />
-            <div className="absolute w-full h-1/2 bg-gray-900" style={{ zIndex: '-1' }} >
+            <div className="absolute w-full h-2/3 bg-gray-900" style={{ zIndex: '-1' }} >
 
             </div>
             <div className=" p-3 sm:p-10" >

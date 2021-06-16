@@ -1,16 +1,60 @@
-import React from 'react'
 import FolderOutlinedIcon from '@material-ui/icons/FolderOutlined';
-
-
-
-
-
-
+import { useState } from 'react';
+import ClearIcon from '@material-ui/icons/Clear';
+import ImageIcon from '@material-ui/icons/Image';
+import GifIcon from '@material-ui/icons/Gif';
+import DescriptionIcon from '@material-ui/icons/Description';
 function OrderForm() {
 
+    const [datafiles, setDatafiles] = useState([]);
+    const FormSubmitHandler = function (event) {
+        event.preventDefault();
+        console.log(
+            event.target[0].value,
+            event.target[1].value,
+            event.target[2].value,
+            event.target[3].value,
+            event.target[4].value)
+    }
+    const FileOnChange = function (e) {
+        let files = e.target.files;
+        console.log(files);
+        setDatafiles([...datafiles, files])
+        let reader = new FileReader;
+        reader.readAsDataURL(files[0]);
+        reader.onload = (e) => {
+            console.log(e.target)
+
+        }
+
+    }
+    function RemoveFile(file) {
+        var array = [...datafiles]
+        var index = array.indexOf(file); // Let's say it's Bob.
+
+        if (index !== -1) {
+            array.splice(index, 1);
+            setDatafiles(array);
+        }
+    }
+
+    const FileItems = ({ file }) => {
+        return <div className="pb-1 flex justify-between border-b  border-black border-opacity-70">
+            <p className="text-sm font-normal">{file[0].name}</p>
+            <button className="hover:text-red-500"
+                onClick={
+                    (e) => {
+                        RemoveFile(file)
+                        // setDatafiles(datafiles.filter((item) => {
+                        //     return item != arr[0]
+                        // }))
+                    }
+                }><ClearIcon /> </button>
+        </div>
+    }
     return (
         <div className="flex z-10  justify-center ">
-            <form className="flex gap-7 flex-col font-medium p-5 md:p-10 rounded-lg shadow-xl bg-white">
+            <form onSubmit={FormSubmitHandler} className="flex gap-7 flex-col font-medium p-5 md:p-10 rounded-lg shadow-xl bg-white">
                 <div className="form-control flex flex-col " >
                     <label className="text-xl py-2 ">Choose a name for your project</label>
                     <input name="project_name" placeholder="e.g. Build me cool website " className="p-3 focus:border-green-700  focus:outline-none md:px-5 border border-indigo-500" type="text" required></input>
@@ -48,10 +92,16 @@ function OrderForm() {
                                         your brief here (Max file size: 25 MB)</span>
                                     <span className="block text-base font-normal opacity-50 md:hidden">Choose any file that might be helpful(Max file size: 25 MB)</span>
                                 </div>
-                            </div> <input name="reference_files" type="file" className="h-full w-full opacity-0" name="" />
+                            </div> <input name="reference_files" type="file" className="h-full w-full opacity-0" onChange={FileOnChange} name="reference" />
                         </div>
                     </div>
 
+                </div>
+                <div className="">
+                    {datafiles.map((file) => {
+                        return <FileItems file={file} />
+
+                    })}
                 </div>
                 <div className="" >
                     {/* <label className="">Project Name</label>
@@ -84,3 +134,4 @@ const date = () => {
     today = yyyy + '-' + mm + '-' + dd;
     return today
 }
+
