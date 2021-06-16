@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Slide from 'react-reveal/Slide';
 import axios from 'axios';
-import url from '../../config'
+import { urls } from '../../config'
 import Popup from 'react-popup'
 import DataUsageIcon from '@material-ui/icons/DataUsage';
 import DoneIcon from '@material-ui/icons/Done';
@@ -19,7 +19,7 @@ function Form() {
             message: e.target[3].value
         }
 
-        axios.post(url, data)
+        axios.post(urls.contact, data)
             .then(res => {
                 console.log(res);
                 console.log(res.data);
@@ -73,7 +73,7 @@ function Form() {
                         <textarea className="outline-none border-2 border-opacity-60  form-textarea mt-1 block w-full border-blue-600 rounded-md p-1 " rows="4" placeholder="message . . ." disabled={isLoading}  ></textarea>
 
                     </label>
-                    <button type="submit" className="focus:outline-none  mt-5  bg-blue-500 w-30 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" disabled={isLoading}>
+                    <button onClick={() => { console.log(urls) }} type="submit" className="focus:outline-none  mt-5  bg-blue-500 w-30 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" disabled={isLoading}>
                         {isLoading ? <> <DataUsageIcon className="animate-spin" /> sending</> : 'Submit'}
                     </button>
                     <div className="text-center mt-3" ref={SuccessDiv}>
