@@ -26,7 +26,7 @@ export default function Navbar() {
 
 
     return (
-        <Disclosure as="nav" className=" mw-full bg-gray-800">
+        <Disclosure as="nav" className="absolute  w-full ">
             {({ open }) => (
                 <>
                     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -74,7 +74,7 @@ export default function Navbar() {
 
 
                             </div>
-                            {isLoggedIn ? <DropDown /> : <button className="font-semibold text-white rounded-md hover:bg-indigo-500 bg-blue-700 px-4 py-2 " onClick={() => { setLoggedIn(true) }}>Login</button>}
+                            {isLoggedIn ? <DropDown /> : <button className="font-semibold text-white rounded-md hover:bg-indigo-500 bg-indigo-700 px-4 py-2 " onClick={() => { setLoggedIn(true) }}>Login</button>}
 
                         </div>
                     </div>
