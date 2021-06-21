@@ -1,26 +1,30 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import Logo from '../../Images/Logo/logo.svg'
 import ChatIcon from '@material-ui/icons/Chat'
-const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'About', href: '#about', current: false },
-  { name: 'Skills', href: '#skills', current: false },
-  { name: 'Projects', href: '#projects', current: false },
-  // { name: 'Project Request', href: '/freelance', current: false },
-  { name: 'Contact', href: '#contact', current: false },
+import About from '../About'
+const navigations = (props) => {
+  return [
+    { name: 'Home', href: '#', current: props.home },
+    { name: 'About', href: '#about', current: props.about },
+    { name: 'Skills', href: '#skills', current: props.skills },
+    { name: 'Projects', href: '#projects', current: props.projects },
+    // { name: 'Project Request', href: '/freelance', current: false },
+    { name: 'Contact', href: '#contact', current: props.contact },
+  ]
+}
 
-]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Navbar() {
+  const navigation = navigations({ home: true })
   return (
-    <Disclosure as="nav" className=" mw-full bg-gray-800">
+    <Disclosure as="nav" className="sticky top-0 z-20 w-full bg-gray-800">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">

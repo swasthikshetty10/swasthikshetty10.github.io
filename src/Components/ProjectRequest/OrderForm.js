@@ -73,9 +73,9 @@ function OrderForm() {
                 </div>
                 <div className="form-control flex flex-col" >
                     <label className="text-xl py-2">Project budget</label>
-                    <div className="flex w-40 p-2 focus:border-green-700  focus:outline-none md:p-2 border border-indigo-500">
-                        <div class=" border  border-indigo-500">
-                            <select name="currency_type " className="focus:outline-none focus:border-green-700">
+                    <div className="flex w-40  focus:border-green-700  focus:outline-none  border border-indigo-500">
+                        <div className="">
+                            <select name="currency_type" className="bg-gray-50  border-r border-gray-900 p-2 focus:outline-none">
                                 <option value="inr">₹</option>
                                 <option value="usd">$</option>
                             </select>
