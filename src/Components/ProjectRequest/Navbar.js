@@ -1,9 +1,8 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { useState } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Logo from '../../Images/Logo/logo.svg'
-import ChatIcon from '@material-ui/icons/Chat'
 import DropDown from './Dropdown'
 const navigation = [
     { name: 'ProjectRequest', href: '#', current: true },
@@ -26,7 +25,7 @@ export default function Navbar() {
 
 
     return (
-        <Disclosure as="nav" className="absolute bg- w-full ">
+        <Disclosure as="nav" className=" bg- w-full ">
             {({ open }) => (
                 <>
                     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">

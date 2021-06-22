@@ -1,21 +1,10 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Logo from '../../Images/Logo/logo.svg'
 import ChatIcon from '@material-ui/icons/Chat'
-import About from '../About'
-const navigations = (props) => {
-  return [
-    { name: 'Home', href: '#', current: props.home },
-    { name: 'About', href: '#about', current: props.about },
-    { name: 'Skills', href: '#skills', current: props.skills },
-    { name: 'Projects', href: '#projects', current: props.projects },
-    // { name: 'Project Request', href: '/freelance', current: false },
-    { name: 'Contact', href: '#contact', current: props.contact },
-  ]
-}
-
+import navigations from "./Navigations"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -57,7 +46,7 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                          'px-3 py-2 rounded-md text-sm font-medium', `${item.name}_tab`
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -71,9 +60,6 @@ export default function Navbar() {
                 <a href="https://wa.link/xcfy4e" className="text-sm font-medium block lg:block  p-2  text-gray-300 hover:text-white focus:outline-none">
                   <span className="sr-only">Chat with me</span>
                   <ChatIcon />
-
-
-
                 </a>
 
               </div>

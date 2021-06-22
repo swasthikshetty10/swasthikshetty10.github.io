@@ -16,7 +16,7 @@ function OrderForm() {
             event.target[2].value,
             event.target[3].value)
         console.log(uploadFiles)
-        window.alert("Hey This website is under construction 🚧 \n Visit sometime later😊")
+        window.alert("Hey This website is under construction 🚧 \nVisit sometime later😊")
 
     }
     const FileOnChange = function (e) {
@@ -114,7 +114,7 @@ function OrderForm() {
                 <div className="" >
                     {/* <label className="">Project Name</label>
                     <input className=""></input> */}
-                    <button type="submit" className="focus:outline-none  mt-5  bg-indigo-500 w-30 hover:bg-blue-700 text-white font-bold py-2 px-4 " >
+                    <button type="submit" className="focus:outline-none  mt-5  bg-indigo-700 w-30 hover:bg-blue-700 text-white font-bold py-2 px-4 " >
                         Submit {/* {isLoading ? <> <DataUsageIcon className="animate-spin" /> sending</> : 'Submit'} */}
                     </button>
                 </div>
