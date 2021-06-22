@@ -16,6 +16,7 @@ function OrderForm() {
             event.target[2].value,
             event.target[3].value)
         console.log(uploadFiles)
+        window.alert("Hey This website is under construction 🚧 \n Visit sometime later😊")
 
     }
     const FileOnChange = function (e) {

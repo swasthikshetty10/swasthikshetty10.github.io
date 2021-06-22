@@ -26,7 +26,7 @@ export default function Navbar() {
 
 
     return (
-        <Disclosure as="nav" className="absolute  w-full ">
+        <Disclosure as="nav" className="absolute bg- w-full ">
             {({ open }) => (
                 <>
                     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -79,7 +79,7 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    <Disclosure.Panel className="sm:hidden">
+                    <Disclosure.Panel className="bg-gray-900 sm:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1">
                             {navigation.map((item) => (
                                 <a
