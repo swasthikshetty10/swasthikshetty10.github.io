@@ -28,7 +28,7 @@ export default function Navbar() {
         <Disclosure as="nav" className=" bg- w-full ">
             {({ open }) => (
                 <>
-                    <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                    <div className="max-w-7xl mx-auto px-2 bg-gray-800 sm:bg-transparent sm:px-6 lg:px-8">
                         <div className="relative flex items-center justify-between h-16">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 {/* Mobile menu button*/}
@@ -50,7 +50,7 @@ export default function Navbar() {
                                     />
 
                                 </div>
-                                <div className="hidden sm:block sm:ml-6">
+                                <div className="hidden md:block md:ml-6">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
                                             <a
@@ -78,7 +78,7 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    <Disclosure.Panel className="bg-gray-900 sm:hidden">
+                    <Disclosure.Panel className="bg-gray-800 md:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1">
                             {navigation.map((item) => (
                                 <a
