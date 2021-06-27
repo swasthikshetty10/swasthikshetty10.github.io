@@ -1,11 +1,30 @@
 import React from 'react'
-
+import axios from "axios"
+import { urls } from "../../../config"
+import { data } from 'browserslist';
 function Login() {
+    const LoginFormHandler = (e) => {
+        e.preventDefault();
+        const data = {
+            "email": e.target[0].value,
+            "password": e.target[1].value
+        };
+        axios.post(urls.token, data)
+            .then((res) => {
+                console.log(res);
+            })
+            .catch(err => {
+                console.log(err)
+
+            })
+
+
+    }
     return (
         <div>
             <div className="bg-grey-lighter min-h-screen flex flex-col">
                 <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
-                    <form className="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+                    <form onSubmit={LoginFormHandler} className="bg-white px-6 py-8 rounded shadow-md text-black w-full">
                         <h1 className="mb-8 text-3xl font-semibold text-center">Log In</h1>
 
 
