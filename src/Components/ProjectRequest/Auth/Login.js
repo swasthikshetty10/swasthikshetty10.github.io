@@ -1,15 +1,15 @@
 import React from 'react'
 import axios from "axios"
 import { urls } from "../../../config"
-import { data } from 'browserslist';
+import { axiosInstance } from '../../../axios';
 function Login() {
     const LoginFormHandler = (e) => {
         e.preventDefault();
         const data = {
-            "email": e.target[0].value,
+            "email": e.target[0].value.trim(),
             "password": e.target[1].value
         };
-        axios.post(urls.token, data)
+        axiosInstance.post(`token/`, data)
             .then((res) => {
                 console.log(res);
             })

@@ -2,7 +2,7 @@ import axios from 'axios';
 import { urls } from './config'
 const baseURL = urls.api;
 
-const axiosInstance = axios.create({
+export const axiosInstance = axios.create({
     baseURL: baseURL,
     timeout: 20000,
     headers: {
