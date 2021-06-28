@@ -1,9 +1,11 @@
 import React from 'react'
 import axios from "axios"
-import { urls } from "../../../config"
 import { axiosInstance } from '../../../axios';
+import { useHistory } from 'react-router-dom';
 function Login() {
+    const history = useHistory();
     const LoginFormHandler = (e) => {
+
         e.preventDefault();
         const data = {
             "email": e.target[0].value.trim(),
@@ -11,7 +13,11 @@ function Login() {
         };
         axiosInstance.post(`token/`, data)
             .then((res) => {
-                console.log(res);
+                localStorage.setItem('access_token', res.data.access);
+                localStorage.setItem('refresh_token', res.data.refresh);
+                axiosInstance.defaults.headers['Authorization'] =
+                    'JWT ' + localStorage.getItem('access_token');
+                history.push('/userprofile');
             })
             .catch(err => {
                 console.log(err)

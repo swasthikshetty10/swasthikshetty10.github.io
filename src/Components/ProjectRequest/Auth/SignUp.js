@@ -13,7 +13,7 @@ function SignIn() {
             "password": e.target[3].value
         };
         console.log(data)
-        axiosInstance.post(`user/signin`, data)
+        axiosInstance.post(`user/signin/`, data)
             .then((res) => {
                 history.push('/login');
                 console.log(res);
