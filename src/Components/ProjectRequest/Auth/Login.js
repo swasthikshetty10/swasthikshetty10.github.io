@@ -20,8 +20,7 @@ function Login() {
                 history.push('/userprofile');
             })
             .catch(err => {
-                console.log(err)
-
+                console.log(err);
             })
 
 
@@ -85,4 +84,4 @@ function Login() {
     )
 }
 
-export default Login
+export default Login;
