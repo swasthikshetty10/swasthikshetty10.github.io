@@ -1,9 +1,10 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Logo from '../../Images/Logo/logo.svg'
 import DropDown from './Dropdown'
+import { authContext } from '../../Context/auth-context'
 const navigation = [
     { name: 'ProjectRequest', href: '#', current: true },
     { name: 'Home', href: '/#', current: false },
@@ -20,7 +21,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
 
-    const [isLoggedIn, setLoggedIn] = useState(false)
+    const isLoggedIn = false
 
 
 
