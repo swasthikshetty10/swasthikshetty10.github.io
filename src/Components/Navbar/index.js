@@ -10,8 +10,25 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+
 export default function Navbar() {
   const navigation = navigations({ home: true })
+  const Home = document.getElementById("home")
+  const About = document.getElementById("about")
+  const Skills = document.getElementById("skills")
+  const Projects = document.getElementById("projects")
+  window.addEventListener('scroll', () => {
+    console.log(window.pageYOffset)
+
+
+    if (About.offsetTop <= window.pageYOffset && window.pageYOffset < About.offsetHeight + About.offsetTop) {
+      console.log(About.className)
+    }
+    else {
+      console.log("outside")
+    }
+  })
+
   return (
     <Disclosure as="nav" className="sticky top-0 z-20 w-full bg-gray-800">
       {({ open }) => (
@@ -42,7 +59,7 @@ export default function Navbar() {
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
-                        key={item.name}
+                        id={item.name + "Nav"}
                         href={item.href}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
