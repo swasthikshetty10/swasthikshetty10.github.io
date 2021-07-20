@@ -28,7 +28,7 @@ export default function Navbar({ sections }) {
 
   window.addEventListener('scroll', () => {
     console.log(window.pageYOffset)
-    console.log(sections)
+    console.log(sections())
 
 
   })

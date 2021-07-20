@@ -3,10 +3,10 @@ import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
 import Dev from "../../Images/Background/Developer.svg"
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-function About() {
+function About({ secRef }) {
 
     return (
-        <section id="about" className="bg-gray-900 lg:h-screen">
+        <section id="about" ref={secRef} className="bg-gray-900 lg:h-screen">
 
             <div className=" text-indigo-200 body-font p-2 md:p-5">
                 <div id="about" className="mt-10 text-center">

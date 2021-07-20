@@ -22,7 +22,7 @@ import tensorflow from "../../Images/Skills/tensorflow.svg"
 import azure from "../../Images/Skills/azure.svg"
 import postgresql from "../../Images/Skills/postgresql.svg"
 
-function Index() {
+function Index({ secRef }) {
 
     const Skills = {
         all: [{ logo: reactjs, name: "React JS" }, { logo: javascript, name: "JavaScript" }, { logo: css, name: "CSS3" }, { logo: html, name: "HTML5" }, { logo: tailwindcss, name: "Tailwind CSS" }, { name: "Bootstrap", logo: bootstrap }, { logo: django, name: "Django" }, { logo: python, name: "Python" }, { logo: nodejs, name: "Node JS" }, { logo: firebase, name: "Firebase" }, { logo: postgresql, name: "Postgresql" }, { logo: mongodb, name: "Mongo DB" }, { logo: azure, name: "Azure" }, { logo: heroku, name: "Heroku" }, { logo: tensorflow, name: "TensorFlow" }, { logo: git, name: "Git" }],
@@ -46,7 +46,7 @@ function Index() {
     }
     const [toFilter, setFilter] = useState(Skills.all)
     return (
-        <section id="skills" className="text-gray-900  lg:h-screen">
+        <section id="skills" className="text-gray-900  lg:h-screen" ref={secRef}>
 
             <div className="  body-font p-5 ">
                 <div id="about" className="mt-10 text-center">

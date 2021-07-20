@@ -19,21 +19,24 @@ const HomePage = () => {
   const SecSkills = useRef()
   const SecProjects = useRef()
   const SecContact = useRef()
-  const Secrefrences = {
-    Home: SecHome,
-    About: SecAbout,
-    Skills: SecSkills,
-    Projects: SecProjects,
-    Contact: SecContact
-  }
+  const sections = () => {
+    return {
+      Home: SecHome,
+      About: SecAbout,
+      Skills: SecSkills,
+      Projects: SecProjects,
+      Contact: SecContact
+    }
 
+  }
+  console.log(SecHome)
   return <>
-    <Navbar sections={Secrefrences} />
-    <Home ref={SecHome} />
-    <About ref={SecAbout} />
-    <Skills ref={SecSkills} />
-    <Projects ref={SecProjects} />
-    <Contact ref={SecContact} />
+    <Navbar sections={sections} />
+    <Home secRef={SecHome} />
+    <About secRef={SecAbout} />
+    <Skills secRef={SecSkills} />
+    <Projects secRef={SecProjects} />
+    <Contact secRef={SecContact} />
     <Footer />
   </>
 }

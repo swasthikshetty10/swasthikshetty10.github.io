@@ -14,7 +14,7 @@ import chintubot from "../../Images/project/chintubot.png"
 
 
 
-function Index() {
+function Index({ secRef }) {
     const Projects = {
         all: [
             { name: 'News Webstie', image: bcl, github: 'https://github.com/swasthikshetty10/News-website', link: 'http://bclnews.herokuapp.com/' },
@@ -25,7 +25,7 @@ function Index() {
         ]
     }
     return (
-        <section id="projects" className=" h-full text-gray-900">
+        <section id="projects" className=" h-full text-gray-900" ref={secRef}>
             <div>
                 <div className="p-10 lg:pb-10  text-center">
                     <Bounce top>

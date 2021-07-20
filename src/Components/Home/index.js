@@ -2,9 +2,9 @@
 import Slide from 'react-reveal/Slide';
 import swasthik from "../../Images/Pages/swasthik.jpg"
 
-export default function Home() {
+export default function Home({ secRef }) {
   return (
-    <section className="lg:h-screen">
+    <section className="lg:h-screen" ref={secRef}>
       <div className="relative bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <Slide left>
