@@ -25,12 +25,24 @@ export default function Navbar({ sections }) {
     Projects: Projects,
     Contact: Contact
   })
-
+  const secRefs = sections()
   window.addEventListener('scroll', () => {
-    console.log(window.pageYOffset)
-    console.log(sections())
+    if (secRefs.Contact.current.offsetTop < window.pageYOffset) {
+      console.log("Contact")
+    }
+    else if (secRefs.Projects.current.offsetTop < window.pageYOffset) {
+      console.log("Projects")
+    }
+    else if (secRefs.Skills.current.offsetTop < window.pageYOffset) {
+      console.log("Skills")
+    }
 
-
+    else if (secRefs.About.current.offsetTop < window.pageYOffset) {
+      console.log("About")
+    }
+    else if (secRefs.Home.current.offsetTop < window.pageYOffset) {
+      console.log("Home")
+    }
   })
 
   return (
