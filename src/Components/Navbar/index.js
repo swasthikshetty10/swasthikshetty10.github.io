@@ -25,23 +25,64 @@ export default function Navbar({ sections }) {
     Projects: Projects,
     Contact: Contact
   })
+  const setActiveNav = (props) => {
+    Home.current.className = classNames(
+      props.home ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+      'px-3 py-2 rounded-md text-sm font-medium'
+    )
+    About.current.className = classNames(
+      props.about ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+      'px-3 py-2 rounded-md text-sm font-medium'
+    )
+    Skills.current.className = classNames(
+      props.skills ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+      'px-3 py-2 rounded-md text-sm font-medium'
+    )
+    Projects.current.className = classNames(
+      props.projects ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+      'px-3 py-2 rounded-md text-sm font-medium'
+    )
+    Contact.current.className = classNames(
+      props.contact ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+      'px-3 py-2 rounded-md text-sm font-medium')
+  }
   const secRefs = sections()
   window.addEventListener('scroll', () => {
     if (secRefs.Contact.current.offsetTop < window.pageYOffset) {
       console.log("Contact")
+      if (Contact.current) {
+        setActiveNav({ contact: true })
+      }
+
     }
     else if (secRefs.Projects.current.offsetTop < window.pageYOffset) {
       console.log("Projects")
+      if (Projects.current) {
+        setActiveNav({ projects: true })
+      }
+
     }
     else if (secRefs.Skills.current.offsetTop < window.pageYOffset) {
       console.log("Skills")
+      if (Skills.current) {
+        setActiveNav({ skills: true })
+      }
+
     }
 
     else if (secRefs.About.current.offsetTop < window.pageYOffset) {
       console.log("About")
+      if (About.current) {
+        setActiveNav({ about: true })
+      }
+
     }
     else if (secRefs.Home.current.offsetTop < window.pageYOffset) {
       console.log("Home")
+      if (Home.current) {
+        setActiveNav({ home: true })
+      }
+
     }
   })
 
