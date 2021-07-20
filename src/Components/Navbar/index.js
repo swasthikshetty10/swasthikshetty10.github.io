@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from 'react'
+import { Fragment, useRef, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Logo from '../../Images/Logo/logo.svg'
@@ -11,22 +11,26 @@ function classNames(...classes) {
 }
 
 
-export default function Navbar() {
-  const navigation = navigations({ home: true })
-  const Home = document.getElementById("home")
-  const About = document.getElementById("about")
-  const Skills = document.getElementById("skills")
-  const Projects = document.getElementById("projects")
+export default function Navbar({ sections }) {
+  const Home = useRef()
+  const About = useRef()
+  const Skills = useRef()
+  const Projects = useRef()
+  const Contact = useRef()
+  const navigation = navigations({
+    home: true,
+    Home: Home,
+    About: About,
+    Skills: Skills,
+    Projects: Projects,
+    Contact: Contact
+  })
+
   window.addEventListener('scroll', () => {
     console.log(window.pageYOffset)
+    console.log(sections)
 
 
-    if (About.offsetTop <= window.pageYOffset && window.pageYOffset < About.offsetHeight + About.offsetTop) {
-      console.log(About.className)
-    }
-    else {
-      console.log("outside")
-    }
   })
 
   return (
@@ -61,6 +65,7 @@ export default function Navbar() {
                       <a
                         id={item.name + "Nav"}
                         href={item.href}
+                        ref={item.ref}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium', `${item.name}_tab`

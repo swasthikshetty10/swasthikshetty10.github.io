@@ -1,4 +1,4 @@
-import react from 'react'
+import react, { useRef } from 'react'
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import About from './Components/About'
@@ -13,13 +13,27 @@ import SignUp from './Components/ProjectRequest/Auth/SignUp'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AuthContext from './Context/auth-context'
 const HomePage = () => {
+
+  const SecAbout = useRef()
+  const SecHome = useRef()
+  const SecSkills = useRef()
+  const SecProjects = useRef()
+  const SecContact = useRef()
+  const Secrefrences = {
+    Home: SecHome,
+    About: SecAbout,
+    Skills: SecSkills,
+    Projects: SecProjects,
+    Contact: SecContact
+  }
+
   return <>
-    <Navbar />
-    <Home />
-    <About />
-    <Skills />
-    <Projects />
-    <Contact />
+    <Navbar sections={Secrefrences} />
+    <Home ref={SecHome} />
+    <About ref={SecAbout} />
+    <Skills ref={SecSkills} />
+    <Projects ref={SecProjects} />
+    <Contact ref={SecContact} />
     <Footer />
   </>
 }
