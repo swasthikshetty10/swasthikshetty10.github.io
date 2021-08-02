@@ -10,7 +10,7 @@ import ProjectRequest from './Components/ProjectRequest'
 import Login from './Components/ProjectRequest/Auth/Login'
 import Logout from './Components/ProjectRequest/Auth/Logout'
 import SignUp from './Components/ProjectRequest/Auth/SignUp'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import AuthContext from './Context/auth-context'
 const HomePage = () => {
 
@@ -27,9 +27,7 @@ const HomePage = () => {
       Projects: SecProjects,
       Contact: SecContact
     }
-
   }
-  console.log(SecHome)
   return <>
     <Navbar sections={sections} />
     <Home secRef={SecHome} />

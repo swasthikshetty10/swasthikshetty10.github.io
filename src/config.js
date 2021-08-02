@@ -5,6 +5,5 @@ export const urls = {
     contact: `${baseurl}/api/contact/`,
     project_request: `${baseurl}/api/project_request/`,
     token: `${baseurl}/api/token/`,
-
-
+    signin: `${baseurl}/api/user/signin/`
 }

@@ -1,4 +1,6 @@
 import React from 'react'
+import { urls } from '../../../config'
+import axios from 'axios'
 import { axiosInstance } from '../../../axios';
 import { data } from 'browserslist';
 import { useHistory } from 'react-router-dom';
@@ -13,7 +15,7 @@ function SignIn() {
             "password": e.target[3].value
         };
         console.log(data)
-        axiosInstance.post(`user/signin/`, data)
+        axios.post(urls.signin, data)
             .then((res) => {
                 history.push('/login');
                 console.log(res);
@@ -71,7 +73,7 @@ function SignIn() {
 
                     <div className="text-grey-dark mt-6">
                         Already have an account?
-                        <a className="no-underline border-b border-blue text-blue-700" href="../login/">
+                        <a className="no-underline border-b border-blue text-blue-700" href="#/login/">
                             Log in
                         </a>.
                     </div>

@@ -72,7 +72,7 @@ function Login() {
                     </div>
                     <div className="text-grey-dark mt-6 cursor-pointer">
                         Don't have an account?
-                        <a href="/signup" className="ml-1 no-underline border-b border-blue  text-blue-700 ">
+                        <a href="#/signup" className="ml-1 no-underline border-b border-blue  text-blue-700 ">
                             SignUp
                         </a>.
                     </div>
