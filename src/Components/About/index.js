@@ -37,7 +37,7 @@ function About({ secRef }) {
                                         </Slide>
                                         <Slide right>
                                             <p className="lg:mt-5 text-indigo-200 text-base pb-8">
-                                                I am First-year student pursuing bachelors of Engineering in Computer Science at NMAM Institute of Technology
+                                                I am Second-year student pursuing bachelors of Engineering in Computer Science at NMAM Institute of Technology
                                             </p>
                                         </Slide>
                                         <Slide bottom className="flex-column italic">

@@ -48,21 +48,21 @@ export default function Navbar({ sections }) {
   }
   const secRefs = sections()
   window.addEventListener('scroll', () => {
-    if (secRefs.Contact.current.offsetTop < window.pageYOffset) {
+    if (secRefs.Contact.current.offsetTop < window.pageYOffset + 250) {
       console.log("Contact")
       if (Contact.current) {
         setActiveNav({ contact: true })
       }
 
     }
-    else if (secRefs.Projects.current.offsetTop < window.pageYOffset) {
+    else if (secRefs.Projects.current.offsetTop < window.pageYOffset + 250) {
       console.log("Projects")
       if (Projects.current) {
         setActiveNav({ projects: true })
       }
 
     }
-    else if (secRefs.Skills.current.offsetTop < window.pageYOffset) {
+    else if (secRefs.Skills.current.offsetTop < window.pageYOffset + 250) {
       console.log("Skills")
       if (Skills.current) {
         setActiveNav({ skills: true })
@@ -70,14 +70,14 @@ export default function Navbar({ sections }) {
 
     }
 
-    else if (secRefs.About.current.offsetTop < window.pageYOffset) {
+    else if (secRefs.About.current.offsetTop < window.pageYOffset + 250) {
       console.log("About")
       if (About.current) {
         setActiveNav({ about: true })
       }
 
     }
-    else if (secRefs.Home.current.offsetTop < window.pageYOffset) {
+    else if (secRefs.Home.current.offsetTop < window.pageYOffset + 250) {
       console.log("Home")
       if (Home.current) {
         setActiveNav({ home: true })
